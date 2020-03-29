@@ -4,7 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import { FlexLayoutModule } from '@angular/flex-layout';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { PaCommonModule } from './shared_modules/pa-common/pa-common.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    // FlexLayoutModule
+    // FlexLayoutModule,
+
+    // modules import
+    PaCommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
