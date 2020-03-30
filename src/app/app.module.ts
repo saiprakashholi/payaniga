@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { PaCommonModule } from './shared_modules/pa-common/pa-common.module';
+import { HomeModule } from './featured_modules/home/home.module';
 
 @NgModule({
   declarations: [
@@ -15,10 +16,11 @@ import { PaCommonModule } from './shared_modules/pa-common/pa-common.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    // FlexLayoutModule,
+    FlexLayoutModule,
 
     // modules import
-    PaCommonModule
+    PaCommonModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
