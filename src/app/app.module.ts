@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { PaCommonModule } from './shared_modules/pa-common/pa-common.module';
 import { HomeModule } from './featured_modules/home/home.module';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,11 @@ import { HomeModule } from './featured_modules/home/home.module';
 
     // modules import
     PaCommonModule,
-    HomeModule
+
+
+    // material
+    MatToolbarModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
